@@ -1,19 +1,21 @@
 import React from "react";
-import webImg from "../assets/web-dev.svg";
 
-const CoursesCard = (props) => {
+const CoursesCard = ({ img, title, description, dataAos }) => {
   return (
-    <div className=" flex flex-col items-center justify-between bg-white border-2 border-lightText md:border-none md:w-2/5 p-5 cursor-pointer rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all">
-      <div className=" w-3/5">
-        <img src={props.img} alt="img" />
+    <div
+      className="flex flex-col items-center justify-between bg-white shadow-md hover:shadow-lg transition-all duration-300 md:w-[22%] w-[90%] p-6 rounded-xl cursor-pointer"
+      data-aos={dataAos} // AOS Animation
+    >
+      {/* Card Image */}
+      <div className="w-28 h-28 flex items-center justify-center">
+        <img src={img} alt={title} className="object-contain w-full h-full" />
       </div>
-      <div>
-        <h3 className="font-semibold text-lg text-center my-5">
-          {props.title}
-        </h3>
-        <p className="text-lightText text-center md:text-start">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit this is the
-          web
+
+      {/* Card Content */}
+      <div className="text-center mt-4">
+        <h3 className="font-semibold text-xl text-[#333]">{title}</h3>
+        <p className="text-gray-500 mt-2 text-sm leading-relaxed">
+          {description}
         </p>
       </div>
     </div>

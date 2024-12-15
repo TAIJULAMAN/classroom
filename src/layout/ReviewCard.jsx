@@ -1,72 +1,40 @@
 import { FaQuoteRight } from "react-icons/fa";
-import { BsStarHalf } from "react-icons/bs";
-import { BsStarFill } from "react-icons/bs";
+import { BsStarHalf, BsStarFill } from "react-icons/bs";
 
 const ReviewCard = (props) => {
   return (
-     <div className=" flex flex-col w-full lg:w-2/6 bg-white p-3 rounded-lg gap-5">
-      <div className=" flex flex-row items-center lg:justify-start justify-center">
-        <div className="w-1/4">
-          <img className=" rounded-full" src={props.img} alt="img" />
-        </div>
-        <div className=" mx-3">
-          <h2 className=" font-semibold text-lg">{props.title}</h2>
-          <div className=" flex">
-            <BsStarFill className=" text-orange-600" />
-            <BsStarFill className=" text-orange-600" />
-            <BsStarFill className=" text-orange-600" />
-            <BsStarFill className=" text-orange-600" />
-            <BsStarHalf className=" text-orange-600" />
+    <div
+      className="flex flex-col w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+      data-aos={props.dataAos}
+    >
+      {/* Header with image and stars */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-4">
+          <img
+            className="w-16 h-16 rounded-full object-cover border-2 border-[#ff5757]"
+            src={props.img}
+            alt="customer"
+          />
+          <div>
+            <h2 className="font-semibold text-xl text-gray-800">
+              {props.title}
+            </h2>
+            <div className="flex gap-1 text-orange-500">
+              <BsStarFill />
+              <BsStarFill />
+              <BsStarFill />
+              <BsStarFill />
+              <BsStarHalf />
+            </div>
           </div>
         </div>
-        <span className=" ml-16">
-          <FaQuoteRight className=" text-backgroundColor" size={42} />
-        </span>
+        <FaQuoteRight className="text-[#ff5757]" size={42} />
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-        consequatur fuga suscipit perspiciatis totam. Eos esse nisi omnis dicta,
-        aperiam distinctio fuga ipsam rerum rem.
-      </p>
+
+      {/* Feedback Text */}
+      <p className="text-gray-600 leading-relaxed">{props.feedback}</p>
     </div>
   );
 };
 
 export default ReviewCard;
-
-
-// import { FaQuoteRight } from "react-icons/fa";
-// import { BsStarHalf } from "react-icons/bs";
-// import { BsStarFill } from "react-icons/bs";
-
-// const ReviewCard = (props) => {
-//   return (
-//     <div className=" flex flex-col w-full lg:w-2/6 bg-white p-3 rounded-lg gap-5">
-//       <div className=" flex flex-row items-center lg:justify-start justify-center">
-//         <div className="w-1/4">
-//           <img className=" rounded-full" src={props.img} alt="img" />
-//         </div>
-//         <div className=" mx-3">
-//           <h2 className=" font-semibold text-lg">{props.title}</h2>
-//           <div className=" flex">
-//             <BsStarFill className=" text-orange-600" />
-//             <BsStarFill className=" text-orange-600" />
-//             <BsStarFill className=" text-orange-600" />
-//             <BsStarFill className=" text-orange-600" />
-//             <BsStarHalf className=" text-orange-600" />
-//           </div>
-//         </div>
-//         <span className=" ml-16">
-//           <FaQuoteRight className=" text-backgroundColor" size={42} />
-//         </span>
-//       </div>
-//       <p>
-//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-//         consequatur fuga suscipit perspiciatis totam. Eos esse nisi omnis dicta,
-//         aperiam distinctio fuga ipsam rerum rem.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default ReviewCard;
