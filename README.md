@@ -4,9 +4,6 @@ Welcome to the **Classroom Website** project, a modern and responsive educationa
 
 ---
 
-## 🚀 **Live Preview**
-[**Live Demo**](classroom-three-beta.vercel.app)  
-
 ---
 
 ## 📝 **Features**
