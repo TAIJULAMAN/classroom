@@ -8,7 +8,7 @@ const Reviews = () => {
   useEffect(() => {
     AOS.init({
       duration: 800, // Animation duration
-      once: true, // Animation only runs once
+      once: true,
     });
   }, []);
 
