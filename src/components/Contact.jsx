@@ -75,7 +75,7 @@ const Contact = () => {
               name="userMessage"
               id="userMessage"
               placeholder="Type your message here..."
-            ></textarea>
+            />
           </div>
 
           <div className="flex justify-center">
