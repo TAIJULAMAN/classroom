@@ -5,8 +5,7 @@ Welcome to the **Classroom Website** project, a modern and responsive educationa
 ---
 
 ## 🚀 **Live Preview**
-[**Live Demo**](#)  
-*(Add your deployment link here)*
+[**Live Demo**](classroom-three-beta.vercel.app)  
 
 ---
 
@@ -24,17 +23,13 @@ Welcome to the **Classroom Website** project, a modern and responsive educationa
 ## 📁 **Project Structure**
 
 ```plaintext
+├── public/            # Images 
+│   ├── about.png
+│   ├── avatar1.png
+│   ├── avatar2.png
+│   ├── avatar3.png
+│   
 src/
-│
-├── assets/            # Images and SVG assets
-│   ├── web-dev.svg
-│   ├── App-dev.svg
-│   ├── graphic.svg
-│   ├── digital.svg
-│   └── images/
-│       ├── badhon.jpg
-│       ├── bappy.jpg
-│       └── opu.jpg
 │
 ├── layout/            # Reusable components
 │   ├── Heading.jsx    # Section headings
@@ -42,7 +37,7 @@ src/
 │   ├── CoursesCard.jsx
 │   └── ReviewCard.jsx
 │
-├── pages/             # Main sections
+├── components/        # Main sections
 │   ├── Courses.jsx    # Courses section
 │   ├── Reviews.jsx    # Customer reviews section
 │   └── Contact.jsx    # Contact form section
@@ -69,7 +64,7 @@ Follow the steps below to get the project up and running on your local machine:
 
 ### 1. **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/classroom-website.git
+git clone https://github.com/TAIJULAMAN/classroom.git
 cd classroom-website
 ```
 
@@ -86,7 +81,7 @@ npm start
 ```
 
 The project will be available at:  
-👉 `http://localhost:3000/`
+👉 `http://localhost:5173/`
 
 ---
 
@@ -105,12 +100,6 @@ For example, with **Vercel**:
    ```
 
 ---
-
-## 🖼 **Screenshots**
-
-| **Home Page** | **Courses Section** | **Reviews Section** | **Contact Page** |
-|---------------|---------------------|---------------------|------------------|
-| *(Add Images)* | *(Add Images)*      | *(Add Images)*      | *(Add Images)*  |
 
 ---
 
@@ -148,8 +137,7 @@ Feel free to use, modify, and distribute this project.
 
 If you have any questions, feedback, or suggestions, feel free to reach out:  
 
-- 📧 **Email**: classroom@email.com  
-- 🗱 **Twitter**: [@classroom](https://twitter.com/classroom)  
+- 📧 **Email**: mdshahamanpatwary@email.com  
 
 ---
 
