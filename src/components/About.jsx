@@ -2,8 +2,18 @@ import img from "/about.png";
 import Button from "../layout/Button";
 import Heading from "../layout/Heading";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <div className="flex flex-col-reverse md:flex-row items-center gap-10 px-[20px] md:px-[100px] pt-[80px] bg-gray-50">
       {/* Image Section */}

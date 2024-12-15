@@ -1,8 +1,18 @@
 import img from "/home.png";
 import Button from "../layout/Button";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-[20px] md:px-[100px] pt-[80px] bg-slate-50">
       {/* Left Content */}
